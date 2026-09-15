@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เกียรติบัตร | Portfolio เอกครินทร์ หงษ์วิเศษ</title>
+<title>กิจกรรม | Portfolio เอกครินทร์ หงษ์วิเศษ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -89,6 +89,21 @@
     display:block;
   }
 
+  /* ---------- Photo box variant: 2 photos side by side ---------- */
+  .cert-photo--double{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6px;
+    padding:6px;
+    background:#f4f4f4;
+  }
+  .cert-photo--double img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+  }
+
   .year-tag{
     position:absolute;
     top:12px;
@@ -100,6 +115,7 @@
     padding:6px 14px;
     border-radius:999px;
     border:1px solid rgba(122,30,62,0.15);
+    z-index:2;
   }
 
   .cert-body{
@@ -132,6 +148,7 @@
       gap:16px;
     }
     .cert-photo{min-height:190px;}
+    .cert-photo--double{min-height:190px;}
   }
 </style>
 </head>
@@ -273,6 +290,28 @@
       <div class="cert-body">
         <p class="cert-title">"การแข่งขันอัจฉริยภาพทางคณิตศาสตร์ ระดับมัธยมศึกษาตอนปลาย"</p>
         <p class="cert-desc">ผมได้เข้าร่วมการแข่งขันอัจฉริยภาพทางคณิตศาสตร์ ระดับมัธยมศึกษาตอนปลาย เนื่องในกิจกรรมสัปดาห์คณิตศาสตร์สู่ความเป็นเลิศ ประจำปีการศึกษา 2569 ระหว่างวันที่ 6–9 กรกฎาคม 2569 ซึ่งช่วยพัฒนาทักษะการคิดวิเคราะห์ การแก้โจทย์ปัญหา และการใช้เหตุผลทางคณิตศาสตร์ภายใต้เวลาและความกดดัน</p>
+      </div>
+    </article>
+
+  </main>
+
+  <header class="page-head">
+    <p class="eyebrow">ACTIVITY GALLERY</p>
+    <h1 class="title">ภาพเข้าร่วมกิจกรรม</h1>
+  </header>
+
+  <main class="cert-list">
+
+    <!-- Activity 1 -->
+    <article class="cert-card">
+      <div class="cert-photo cert-photo--double">
+        <img src="images/activity-01-1.jpg" alt="ภาพเข้าร่วมกิจกรรมแนะแนวทันตกรรม 1">
+        <img src="images/activity-01-2.jpg" alt="ภาพเข้าร่วมกิจกรรมแนะแนวทันตกรรม 2">
+        <span class="year-tag">ประจำปีการศึกษา 2569</span>
+      </div>
+      <div class="cert-body">
+        <p class="cert-title">"เข้าร่วมศึกษาดูงานในกิจกรรมแนะแนวทางการศึกษาเพื่อเสริมสร้างประสบการณ์และเป็นแนวทางในการประกอบอาชีพด้านทันตกรรม"</p>
+        <p class="cert-desc">ผมได้เข้าร่วมศึกษาดูงานในกิจกรรมแนะแนวทางการศึกษาเพื่อเสริมสร้างประสบการณ์และเป็นแนวทางในการประกอบอาชีพด้านทันตกรรม ณ คลินิกทันตกรรมเอสซี สาขาบ้านบึง จังหวัดชลบุรี เมื่อวันที่ 18 มีนาคม 2569 ทำให้ได้รับความรู้และประสบการณ์เกี่ยวกับการเรียนและการประกอบอาชีพด้านทันตกรรม รวมถึงได้เห็นแนวทางการทำงานจริงของวิชาชีพ</p>
       </div>
     </article>
 
